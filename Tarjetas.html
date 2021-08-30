@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Tarjetas</title>
+  </head>
+  <body>
+    <header class="navbar navbar-dark" style="background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Escuela De Código </strong> 
+        </a>
+      </div>
+    </header>
+    <div class="container-xxl">
+      <section class="row">
+      <aside class="col-3"> <br>
+       <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Acordeón</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Alertas.html">Alertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tarjetas.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Botones.html">Botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Colapso.html">Colapso</a>
+          </li>
+          
+        </ul>
+       </nav>
+      </aside>
+      
+    
+        <article class="col-9"> <br>
+          <h3>Tarjetas</h3>
+          <p>Las tarjetas de Bootstrap proporcionan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.</p>
+          <h3>Sobre</h3>
+          <p>Una <strong>tarjeta</strong> es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. Si está familiarizado con Bootstrap 3, las tarjetas reemplazan nuestros viejos paneles, pozos y miniaturas. Funcionalidad similar a esos componentes está disponible como clases modificadoras para tarjetas.</p> 
+          <h3>Ejemplo</h3>
+          <p>Las tarjetas se crean con la menor cantidad de marcas y estilos posibles, pero aún así logran ofrecer un montón de control y personalización. Construidos con flexbox, ofrecen una alineación fácil y se combinan bien con otros componentes de Bootstrap. No tienen <code>margin</code>por defecto, así que use las <a href="#" class="alert-link">utilidades de espacio</a> seún sea necesario.</p> 
+          <p>A continuación se muestra un ejemplo de una tarjeta básica con contenido mixto y un ancho fijo. Las tarjetas no tienen un ancho fijo para comenzar, por lo que naturalmente llenarán el ancho completo de su elemento principal. Esto se puede personalizar fácilmente con nuestras diversas <a href="#" class="alet-link">opciones de tamaño.</a></p>
+          <div class="card">
+            <div class="card-body">
+              <div class="card" style="width: 18rem;">
+                <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Título de la tarjeta</h5>
+                  <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Tipos de contenido</h3>
+          <p>Las tarjetas admiten una amplia variedad de contenido, incluidas imágenes, texto, grupos de listas, enlaces y más. A continuación se muestran ejemplos de lo que se admite.</p>
+          <h3>Cuerpo</h3>
+          <p>El componente básico de una tarjeta es el <code>.card-body</code>. Úselo siempre que necesite una sección acolchada dentro de una tarjeta.</p>
+          <div class="card">
+            <div class="card-body">
+              <div class="card">
+                <div class="card-body">
+                  Este es un texto dentro del cuerpo de una tarjeta.
+                </div>
+              </div>
+            </div>
+          </div> <br>
+          <h3>Títulos, texto y enlaces</h3>
+          <p>Los títulos de las cartas se utilizan añadiendo <code>.card-title</code>etiqueta. De la misma manera, los enlaces se agregan y se colocan uno al lado del otro agregando <code>.card-link</code>a una <code><a></code>etiqueta. </p> 
+            <p>Los subtítulos se utilizan agregando un <code>.card-subtitle</code>a una <code><h*></code>Si los elementos <code>.card-title</code>y los <code>.card-subtitle</code>elementos se colocan en un <code>.card-body</code>elemento, el título y el subtítulo de la tarjeta estan bien alineados.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta
+                    </h6>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                    <a href="#" class="card-link">Enlace de tarjeta </a>
+                    <a href="#" class="card-link">Otro enlace</a>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Imagenes</h3> 
+            <p><code>.card-img-top</code>coloca una imagen en la pate superior de la tarjeta. Con <code>.card-text</code>, se puede agregar texto a la tarjeta. El texto que contiene <code>.card-text</code>también se puede diseñar con las etiquetas HTML estándar.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card" style="width: 18rem;">
+                  <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+            <h3>Listar grupos</h3> 
+            <p>Cree listas de contenido en una tarjeta con un grupo de listas alineadas.</p> 
+            <div class="card">
+              <div class="card-body">
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Un artículo</li>
+                <li class="list-group-item">Un segundo elemento</li>
+                <li class="list-group-item">Un tercer artículo</li>
+              </ul>
+            </div> <br>
+            <div class="card" style="width: 18rem;">
+              <div class="card-header">
+                Presentado
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Un artículo</li>
+                <li class="list-group-item">Un segundo elemento</li>
+                <li class="list-group-item">Un tercer artículo</li>
+              </ul>
+            </div> <br>
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Un artículo</li>
+                <li class="list-group-item">Un segundo elemento</li>
+                <li class="list-group-item">Un tercer artículo</li>
+              </ul>
+              <div class="card-footer">
+                Pie de página de la tarjeta
+              </div>
+            </div>
+          </div>
+        </div><br>
+            <h3>Fregadero</h3> 
+            <p>Mezcle y combine varios tipos de contenido para crear la tarjeta que necesita, o coloque todo allí. A continuación se muestran los estilos de imagen, bloques, estilos de texto y un grupo de lista, todo envuelto en una tarjeta de ancho fijo.</p> 
+            <div class="card" style="width: 18rem;">
+              <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Un articulo</li>
+                <li class="list-group-item">Un segundo elemento</li>
+                <li class="list-group-item">AUn tercer artículo</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Enlace de tarjeta </a>
+                <a href="#" class="card-link">Otro enlace</a>
+              </div>
+            </div> <br>
+            <h3>Encabezado y pié de página</h3> 
+            <p>Agregue un encabezado y / o pie de página opcional dentro de una tarjeta.</p> 
+            <div class="card">
+              <div class="card-header">
+                Presentado
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div> <br>
+            <p>Cabeceras de tarjetas pueden ser de estilo mediante la adición <code>.card-header</code>de <code><h*></code>elementos.</p> 
+            <div class="card">
+              <h5 class="card-header">Presentado</h5>
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div> <br>
+            <div class="card">
+              <div class="card-header">
+                Cita
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>Una cita conocida, contenida en un elemento blockquote.</p>
+                  <footer class="blockquote-footer">Alguien famoso en <cite title="Source Title">el título fuente</cite></footer>
+                </blockquote>
+              </div>
+            </div> <br>
+            <div class="card text-center">
+              <div class="card-header">
+                Presentado
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+              <div class="card-footer text-muted">
+                hace 2 días
+              </div>
+            </div> <br>
+            <h3>Dimensionamiento</h3> 
+            <p>Las tarjetas asumen que no son específicas <code>width</code>para comenzar, por lo que serán 100% anchas a menos que se indique lo contrario. Puede cambiar esto según sea necesario con CSS personalizado, clases de cuadrícula, mixins de cuadrícula Sass o utilidades.</p> 
+            <h3>Usar marcado de cuadrícula</h3> 
+            <p>Usando la cuadrícula, envuelva las tarjetas en columnas y filas según sea necesario.</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tratamiento de título especial</h5>
+                    <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                    <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tratamiento de título especial</h5>
+                    <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                    <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Usando utilidades</h3> 
+            <p>Utilice nuestro puñado de <a href="#">utilidades de tamaño disponibles </a> para establecer rápidamente el ancho de una tarjeta.</p> 
+            <div class="card w-75">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Botón</a>
+              </div>
+            </div> <br>
+            
+            <div class="card row">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Botón</a>
+              </div>
+            </div> <br>
+            <h3>Usando CSS personalizado</h3> 
+            <p>Use CSS personalizado en sus hojas de estilo o como estilos en línea para establecer un ancho.</p> 
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a alún lugar</a>
+              </div>
+            </div> <br>
+            <h3>Alineación del texto</h3> 
+            <p>Puede cambiar rápidamente la alineación del texto de cualquier tarjeta, en su totalidad o partes específicas, con nuestras <a href="#">clases de alineación de texto</a>.</p> 
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a alún lugar</a>
+              </div>
+            </div> <br>
+            
+            <div class="card text-center" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a alún lugar</a>
+              </div>
+            </div> <br>
+            
+            <div class="card text-end" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional..</p>
+                <a href="#" class="btn btn-primary">Ir a alún lugar</a>
+              </div>
+            </div> <br>
+            <h3>Navegación</h3> 
+            <p>Agregue algo de navegación al encabezado (o bloque) de una tarjeta con los <a href="#">componentes de navegación </a> de Bootstrap .</p> 
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">Activo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Enlace</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Inhabilitado</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div> <br>
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Activo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Enlace</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Inhabilitado</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tratamiento de título especial</h5>
+                <p class="card-text">Con el texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div> <br>
+            <h3>Imagenes</h3>
+            <p>Las tarjetas incluyen algunas opciones para trabajar con imágenes. Elija entre agregar "tapas de imagen" en cualquier extremo de una tarjeta, superponer imágenes con el contenido de la tarjeta o simplemente incrustar la imagen en una tarjeta.</p> 
+            <h3>Gorras de imagen</h3> 
+            <p>De manera similar a los encabezados y pies de página, las tarjetas pueden incluir "tapas de imagen" en la parte superior e inferior, es decir, imágenes en la parte superior o inferior de una tarjeta.</p> <br>
+            <div class="card mb-3">
+              <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo..</p>
+                <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              </div>
+              <img src="imagenes/descarga.png" class="card-img-bottom" alt="...">
+            </div> <br>
+            <h3>Superposiciones de imágenes</h3> 
+            <p>Convierta una imagen en un fondo de tarjeta y superponga el texto de su tarjeta. Dependiendo de la imagen, es posible que necesite o no estilos o utilidades adicionales.</p> 
+            <div class="card bg-dark text-white">
+              <img src="imagenes/descarga.png" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                <p class="card-text">Última actualización hace 3 minutos</p>
+              </div>
+            </div> <br>
+            <div class="card">
+              <div class="card-body">
+                Tenga en cuenta que el contenido no debe ser mayor que la altura de la imagen. Si el contenido es más grande que la imagen, el contenido se mostrará fuera de la imagen.
+              </div>
+            </div> <br>
+            <h3>Horizontal</h3> 
+            <p>Utilizando una combinación de clases de red y de servicios públicos, las tarjetas se pueden hacer horizontales de una manera compatible con dispositivos móviles y con capacidad de respuesta. En el siguiente ejemplo, eliminamos las canaletas de la cuadrícula <code>.g-0</code>y usamos <code>.col-md-*</code>clases para hacer que la tarjeta sea horizontal en el <code>md</code>punto de interrupción. Es posible que se necesiten más ajustes según el contenido de su tarjeta.</p> 
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="imagenes/descarga.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta</h5>
+                    <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Estilos de cartas</h3> 
+            <p>Las tarjetas incluyen varias opciones para personalizar sus fondos, bordes y color.</p> 
+            <h3>Fondo y color</h3>
+            <p>Utilice las <a href="#">utilidades de color</a> y <a href="#">fondo del texto</a> para cambiar la apariencia de una tarjeta.</p> 
+            <div class="card">
+              <div class="card-body">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta principal</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta secundaria</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta de éxito</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta de peligro</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta de advertencia</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-dark bg-info mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta de información</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta ligera</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Encabezado</div>
+              <div class="card-body">
+                <h5 class="card-title">Título de la carta oscura</h5>
+                <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+              </div>
+            </div>
+          </div>
+        </div> <br>
+            <div class="card">
+              <div class="card-body">
+                <h1>Transmitir significado a las tecnologías de asistencia</h1>
+                <p>El uso del color para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia, como los lectores de pantalla. Asegúrese de que la información indicada por el color sea obvia a partir del contenido en sí (por ejemplo, el texto visible) o se incluya a través de medios alternativos, como texto adicional oculto con la  <code>.visually-hidden</code>clase.</p>
+              </div>
+            </div>
+           <br>
+            <h3>Frontera</h3> 
+            <p>Utilice <a href="#">las utilidades de borde</a> para cambiar solo el <code>border-color</code>de una tarjeta. Tenga en cuenta que puede poner <code>.text-{color}</code>clases en el padre <code>.card</code>o en un subconjunto del contenido de la tarjeta como se muestra a continuación.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body text-primary">
+                    <h5 class="card-title">Título de la tarjeta principal</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Título de la tarjeta secundaria</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Título de la tarjeta de éxito</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-danger mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body text-danger">
+                    <h5 class="card-title">Título de la tarjeta de peligro</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta de advertencia</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta de información</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Título de la tarjeta ligera</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+                <div class="card border-dark mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Encabezado</div>
+                  <div class="card-body text-dark">
+                    <h5 class="card-title">Título de la tarjeta oscura</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Utilidades Mixins</h3> 
+            <p>También puede cambiar los bordes en el encabezado y pie de página de la tarjeta según sea necesario, e incluso eliminarlos <code>background-color</code> con <code>.bg-transparent</code>.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card border-success mb-3" style="max-width: 18rem;">
+                  <div class="card-header bg-transparent border-success">Encabezado</div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Título de la tarjeta de éxito</h5>
+                    <p class="card-text">Algún texto de ejemplo rápido para construir sobre el título de la tarjeta y constituir la mayor parte del contenido de la tarjeta.</p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">Pie de página</div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Diseño de tarjeta</h3> 
+            <p>Además de diseñar el contenido dentro de las tarjetas, Bootstrap incluye algunas opciones para diseñar series de tarjetas. Por el momento,  <strong>estas opciones de diseño aún no responden</strong>.</p>
+            <h3>Grupos de cartas</h3> 
+            <p>Utilice grupos de tarjetas para representar tarjetas como un solo elemento adjunto con columnas de igual ancho y alto. Los grupos de tarjetas comienzan apilados y <code>display: flex;</code> se unen con dimensiones uniformes comenzando en el <code>sm</code> punto de interrupción.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta tarjeta tiene texto de apoyo a continuación como una introducción natural a contenido adicional..</p>
+                      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Esta tarjeta tiene un contenido aún más largo que el primero para mostrar esa acción de igual altura.</p>
+                      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <p>Al usar grupos de tarjetas con pies de página, su contenido se alineará automáticamente.</p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="card-group">
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Última actualización hace 3 minutos</small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta tarjeta tiene texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Última actualización hace 3 minutos</small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Título de la tarjeta</h5>
+                      <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Esta tarjeta tiene un contenido aún más largo que el primero para mostrar esa acción de igual altura.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Última actualización hace 3 minutos</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <h3>Tarjetas de cuadrícula</h3> 
+            <p>Use el sistema de cuadrícula Bootstrap y sus <a href="#">.row-colsclases </a>para controlar cuántas columnas de cuadrícula (envueltas alrededor de sus tarjetas) muestra por fila. Por ejemplo, aquí se <code>.row-cols-1</code>colocan las tarjetas en una columna y se <code>.row-cols-md-2</code>dividen cuatro tarjetas con el mismo ancho en varias filas, desde el punto medio hacia arriba. </p> 
+            <div class="card">
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo..</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <p>Cámbielo a <code>.row-cols-3</code> y verá la cuarta envoltura de la tarjeta.</p> <br>
+            <div class="card">
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <p>Cuando necesite la misma altura, agregue <code>.h-100</code>a las tarjetas. Si desea alturas iguales de forma predeterminada, puede establecer <code>$card-height: 100%</code> en Sass.</p> <br>
+            <div class="card">
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta corta.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más larga con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+            <p>Al igual que con los grupos de tarjetas, los pies de las tarjetas se alinearán automáticamente.</p> <br>
+            <div class="card">
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Última actualización hace 3 minutos</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta tarjeta tiene texto de apoyo a continuación como una introducción natural a contenido adicional..</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Última actualización hace 3 minutos</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="imagenes/descarga.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Esta tarjeta tiene un contenido aún más largo que el primero para mostrar esa acción de igual altura.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Última actualización hace 3 minutos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <br>
+       </article>    
+    </div>
+    <footer class="navbar navbar-dark" style="background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Tarjetas.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Pulse aquí para volver arriba </strong> 
+        </a>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

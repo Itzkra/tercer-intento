@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Botones</title>
+  </head>
+  <body>
+    <header class="navbar navbar-dark" style="background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Escuela De Código </strong> 
+        </a>
+      </div>
+    </header>
+
+    <div class="container-xxl">
+      <section class="row">
+      <aside class="col-3"> <br>
+       <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Acordeón</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Alertas.html">Alertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tarjetas.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Botones.html">Botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Colapso.html">Colapso</a>
+          </li>
+          
+        </ul>
+       </nav>
+      </aside>
+
+    
+        <article class="col-9"> <br>
+          <h3>Botones</h3>
+          <p>Use los estilos de botones personalizados de Bootstrap para acciones en formularios, cuadros de diálogo y más con soporte para múltiples tamaños, estados y más.</p> 
+          <h3>Ejemplos de</h3> 
+          <p>Bootstrap incluye varios estilos de botones predefinidos, cada uno con su propio propósito semántico, con algunos extras para un mayor control.</p> 
+          <div class="card">
+            <div class="card-body">
+              <button type="button" class="btn btn-primary">Primario</button>
+              <button type="button" class="btn btn-secondary">Secundario</button>
+              <button type="button" class="btn btn-success">Exito</button>
+              <button type="button" class="btn btn-danger">Peligro</button>
+              <button type="button" class="btn btn-warning">Advertencia</button>
+              <button type="button" class="btn btn-info">información</button>
+              <button type="button" class="btn btn-light">luz</button>
+              <button type="button" class="btn btn-dark">Oscuro</button>
+
+              <button type="button" class="btn btn-link">Enlace</button>
+            </div>
+            </div> <br>
+             <div class="card">
+              <div class="card-body">
+              <h1>Transmitir significado a las tecnologías de asistencia</h1><br>
+              <p>El uso del color para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia, como los lectores de pantalla. Asegúrese de que la información indicada por el color sea obvia a partir del contenido en sí (por ejemplo, el texto visible) o se incluya a través de medios alternativos, como texto adicional oculto con la <code>.visually-hidden</code> clase.</p>
+            </div>
+          </div> <br>
+          <h3>Deshabilitar el ajuste de texto</h3> 
+          <p>Si no desea que el texto del botón se ajuste, puede agregar la <code>.text-nowrap</code> clase al botón. En Sass, puede configurar <code>$btn-white-space: nowrap</code> para deshabilitar el ajuste de texto para cada botón.</p> 
+
+          <h3>Etiquetas de botón</h3>
+
+          <p>Las <code>.btn</code> clases están diseñadas para usarse con el <code> botón </code> elemento. Sin embargo, también puede usar estas clases en elementos <code> a</code> o <code>input</code> (aunque algunos navegadores pueden aplicar una representación ligeramente diferente). <br>
+
+            Cuando se utilizan clases de botones en <code><a></code> elementos que se utilizan para activar la funcionalidad en la página (como el contenido que se contrae), en lugar de vincular a nuevas páginas o secciones dentro de la página actual, estos vínculos deben tener una <code>role="button"</code> para transmitir adecuadamente su propósito a tecnologías de asistencia como lectores de pantalla.</p> 
+              <div class="card">
+                <div class="card-body">
+                  <a class="btn btn-primary" href="#" role="button">Enlace</a>
+                  <button class="btn btn-primary" type="submit">Botón</button>
+                  <input class="btn btn-primary" type="button" value="Input">
+                  <input class="btn btn-primary" type="submit" value="Submit">
+                  <input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+              </div><br>
+              <h3>Botones de contorno</h3> 
+              <p>¿Necesitas un botón, pero no los fuertes colores de fondo que traen? Reemplace las clases de modificadores predeterminadas con las <code>.btn-outline-*</code> que eliminan todas las imágenes y colores de fondo en cualquier botón.</p> 
+              <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-outline-primary">Primario</button>
+                  <button type="button" class="btn btn-outline-secondary">Secundario</button>
+                  <button type="button" class="btn btn-outline-success">Exito</button>
+                  <button type="button" class="btn btn-outline-danger">Peligro</button>
+                  <button type="button" class="btn btn-outline-warning">Advertencia</button>
+                  <button type="button" class="btn btn-outline-info">información</button>
+                  <button type="button" class="btn btn-outline-light">luz</button>
+                  <button type="button" class="btn btn-outline-dark">Oscuro</button>
+                </div>
+              </div> <br>
+              <div class="card">
+                <div class="card-body">
+                  Algunos de los estilos de botones usan un color de primer plano relativamente claro y solo deben usarse sobre un fondo oscuro para tener suficiente contraste.
+                </div>
+              </div> <br>
+              <h3>Tamaños</h3> 
+              <p>¿Te apetecen botones más grandes o más pequeños? Agregue .btn-lgo .btn-smpara tamaños adicionales.</p>
+              <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+                  <button type="button" class="btn btn-secondary btn-lg">Botón grande</button>
+                </div>
+              </div> <br>
+              <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+                  <button type="button" class="btn btn-secondary btn-sm">Botón pequeño</button>
+                </div>
+              </div> <br>
+              <h3>Estado Inhabilitado</h3> 
+              <p>Haga que los botones parezcan inactivos agregando el <code>disable</code> datributo booleano a cualquier <code>button</code>elemento. Se han <code>pointer-events: none</code> aplicado botones deshabilitados , lo que evita que se activen los estados activos y de desplazamiento.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-lg btn-primary" disabled>Botón principal</button>
+                    <button type="button" class="btn btn-secondary btn-lg" disabled>Botón</button>
+                  </div>
+                </div> <br>
+                <p>Los botones deshabilitados que usan el <code> <a></code>elemento se comportan un poco diferente: <br>
+                <ul>
+                  <li><code> <a></code>s no admiten el <code>disable</code> datributo, por lo que debe agregar la <code>.disabled</code> clase para que aparezca visualmente deshabilitada.</li>
+                    <li>Se incluyen algunos estilos amigables para el futuro para deshabilitar todos los <code>pointer-events</code> botones de anclaje.</li>
+                    <li>Los botones desactivados deben incluir el <code>aria-disabled="true"</code> atributo para indicar el estado del elemento a las tecnologías de asistencia.</li>
+                </ul></p>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Enlace principal</a>
+                    <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Enlace</a>
+                  </div>
+                </div> <br>
+                <div class="card">
+                  <div class="card-body">
+                    <h1>Advertencia sobre la funcionalidad del enlace</h1> <br>
+                    <p>La <code> .disabled</code> clase usa <code>pointer-events: none</code> para intentar deshabilitar la funcionalidad de enlace de <code> <a></code>s, pero esa propiedad CSS aún no está estandarizada. Además, incluso en los navegadores compatibles <code>pointer-events: none</code> , la navegación con el teclado no se ve afectada, lo que significa que los usuarios videntes del teclado y los usuarios de tecnologías de asistencia aún podrán activar estos enlaces. Por lo tanto, para estar seguro, <code>aria-disabled="true"</code> también incluya un <code>tabindex="-1"</code> atributo en estos enlaces para evitar que reciban el enfoque del teclado, y use JavaScript personalizado para deshabilitar su funcionalidad por completo.</p>
+                  </div>
+                </div> <br>
+                <h3>Bloquear botones</h3> 
+                <p>Cree pilas receptivas de "botones de bloque" de ancho completo como los de Bootstrap 4 con una combinación de nuestras utilidades de visualización y espacio. Al usar utilidades en lugar de clases específicas de botones, tenemos un control mucho mayor sobre el espaciado, la alineación y los comportamientos de respuesta.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Botón</button>
+                      <button class="btn btn-primary" type="button">Botón</button>
+                    </div>
+                  </div>
+                </div> <br>
+                <p>Aquí creamos una variación receptiva, comenzando con botones apilados verticalmente hasta el <code>md</code> punto de interrupción, donde <code>.d-md-block</code> reemplaza la <code>v</code> clase, anulando así la <code>gap-2</code> utilidad. Cambie el tamaño de su navegador para verlos cambiar.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-primary" type="button">Botón</button>
+                      <button class="btn btn-primary" type="button">Botón</button>
+                    </div>
+                  </div>
+                </div> <br>
+                <p>Puede ajustar el ancho de sus botones de bloque con clases de ancho de columna de cuadrícula. Por ejemplo, para un "botón de bloque" de ancho medio, utilice <code>.col-6</code> . Céntrelo también horizontalmente con <code>.mx-auto</code> .</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-primary" type="button">Botón</button>
+                      <button class="btn btn-primary" type="button">Botón</button>
+                    </div>
+                  </div>
+                </div> <br>
+                <p>Se pueden utilizar utilidades adicionales para ajustar la alineación de los botones en posición horizontal. Aquí tomamos nuestro ejemplo de respuesta anterior y agregamos algunas utilidades flexibles y una utilidad de margen en el botón para alinear a la derecha los botones cuando ya no están apilados.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <button class="btn btn-primary me-md-2" type="button">Botón</button>
+                      <button class="btn btn-primary" type="button">Botón</button>
+                    </div>
+                  </div>
+                </div> <br>
+                <h3>Complemento de botón</h3> 
+                <p>El complemento de botón le permite crear botones de alternancia de encendido / apagado simples.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    Visualmente, estos botones de alternancia son idénticos a los <a href="#">botones de alternancia de casillas de verificación</a> . Sin embargo, las tecnologías de asistencia las transmiten de manera diferente: los lectores de pantalla anunciarán las casillas de verificación como "marcadas" / "no marcadas" (ya que, a pesar de su apariencia, siguen siendo casillas de verificación), mientras que estos botones de alternancia se anunciarán como “Botón” / “botón pulsado”. La elección entre estos dos enfoques dependerá del tipo de alternancia que esté creando y de si la alternancia tendrá sentido para los usuarios cuando se anuncie como una casilla de verificación o como un botón real.
+                  </div>
+                </div> <br>
+                <h3>Alternar estados</h3> 
+                <p>Agregar <code>data-bs-toggle="button"</code> para alternar el <code>active</code> estado de un botón . Si está activando previamente un botón, debe agregar manualmente la <code>.active</code> clase <strong>y </strong> <code>aria-pressed="true"</code> asegurarse de que se transmita adecuadamente a las tecnologías de asistencia.</p> 
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Botón de activación</button>
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Botón de alternancia activo</button>
+                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Botón de alternancia inhabilitado</button>
+                  </div>
+                </div> <br>
+                <div class="card">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Enlace de alternancia</a>
+                    <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Enlace de alternancia activo</a>
+                    <a href="#" class="btn btn-primary disabled" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Enlace de alternancia inhabilitado</a>
+                  </div>
+                </div>  <br>
+        </article>
+      </section>
+    </div>
+    <footer class="navbar navbar-dark" style="background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Botones.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Pulse aquí para volver arriba </strong> 
+        </a>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

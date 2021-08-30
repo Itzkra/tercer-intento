@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Alertas</title>
+  </head>
+  <body>
+    <header class="navbar navbar-dark" style="background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Escuela De Código </strong> 
+        </a>
+      </div>
+    </header>
+
+    <div class="container-xxl">
+      <section class="row">
+      <aside class="col-3"> <br>
+       <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Acordeón</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Alertas.html">Alertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tarjetas.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Botones.html">Botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Colapso.html">Colapso</a>
+          </li>
+          
+        </ul>
+       </nav>
+      </aside>
+
+      <article class="col-9">
+     <section class="row">
+      <article2 class="col-9"> <br>
+        <h2>Alertas</h2> 
+        <p>Proporcione mensajes de retroalimentación contextual para las acciones típicas de los usuarios con un puñado de mensajes de alerta disponibles y flexibles.</p>
+        <h2>Ejemplo</h2>
+        <p>Las alertas están disponibles para cualquier longitud de texto, así como un botón de cierre opcional. Para un estilo adecuado, use una de las ocho clases contextuales <strong>requeridas</strong>  (p <code>.alert-success</code>. Ej., ). Para el despido en línea,<a href="#" class="pe-none" tabindex="-1" aria-disabled="true">use el complemento de JavaScript de alertas.</a> </p>
+        
+        <div class="card">
+          <div class="card-body">
+           <div class="alert alert-primary" role="alert">
+             Una simple alerta primaria: ¡compruébelo!
+           </div>
+           <div class="alert alert-secondary" role="alert">
+             Una simple alerta secundaria: ¡compruébelo!
+           </div>
+           <div class="alert alert-success" role="alert">
+             Una simple alerta dev éxito: ¡compruébelo!
+           </div>
+           <div class="alert alert-danger" role="alert">
+             Una simple alerta de peligro: ¡compruébelo!
+           </div>
+           <div class="alert alert-warning" role="alert">
+             Una simple alerta de advertencia: ¡compruébelo!
+           </div>
+           <div class="alert alert-info" role="alert">
+             Una simple alerta de información: ¡compruébelo!
+           </div>
+           <div class="alert alert-light" role="alert">
+             Una simple alerta de luz: ¡compruébelo!
+           </div>
+           <div class="alert alert-dark" role="alert">
+             Una simple alerta oscura: ¡compruébelo!
+           </div>
+          </div>
+        </div> <br>
+       <div class="card">
+         <div class="card-body">
+           <h3>Transmitir significado a las tecnologías de asistencia</h3>
+           <p>El uso del color para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia, como los lectores de pantalla. Asegúrese de que la información indicada por el color sea obvia a partir del contenido en sí (por ejemplo, el texto visible) o se incluya a través de medios alternativos, como texto adicional oculto con la <code>.visually-hidden</code>clase.</p>
+         </div>
+       </div> <br>
+       <h2>Ejemplo vivo</h2>
+       <p>Haga clic en el botón de abajo para mostarar una alerte (oculta con estilos en línea para comenzar), luego deséchela (y destrúyala) con el botón de cierre incorporado.</p>
+
+       <div class="alert alert-primary alert-dismissible" role="alert" id="liveAlert">
+         ¡Bien, activaste este mensaje de alerta!
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+       <div class="card">
+         <div class="card-body">
+           <button type="button" class="btn btn-primary" id="liveAlertBtn">Mostrar alerta en vivo </button>
+         </div>
+       </div> <br>
+     
+       <h3>Color de enlace</h3>
+       <p>Utilice la <code>.alert-link</code>clase de utilidad  para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.</p>
+       <div class="card">
+         <div class="card-body">
+           <div class="alert alert-primary" role="alert">
+             Una alerta primaria simple con <a href="#" class="alert-link">un enlace de ejemplo</a> . Dale un clic si quieres.
+           </div> 
+           <div class="alert alert-secondary" role="alert">
+             Una alerta secundaria simple con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-success" role="alert">
+             Una alerta de éxito simple con  <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-danger" role="alert">
+             Una simple alerta de peligro con  <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-warning" role="alert">
+             Una simple alerta de advertencia con  <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-info" role="alert">
+             Una alerta de información simple con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-light" role="alert">
+             Una alerta de luz simple con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+           <div class="alert alert-dark" role="alert">
+             Una simple alerta oscura con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+           </div>
+         </div>
+       </div> <br>
+       <h3>Contenido adicional</h3>
+       <p>Las alertas también pueden contener elementos HTML adicionales como títulos, párrafos y separadores.</p>
+       <div class="card">
+         <div class="card-body">
+           <div class="alert alert-success" role="alert">
+             <h4 class="alert-heading">¡Bien hecho!!</h4>
+             <p>Ah, sí, leíste correctamente este importante mensaje de alerta. Este texto de ejemplo se extenderá un poco más para que pueda ver cómo funciona el espaciado dentro de una alerta con este tipo de contenido.</p>
+             <hr>
+             <p class="mb-0">Siempre que lo necesite, asegúrese de utilizar las utilidades de margen para mantener las cosas en orden.</p>
+           </div>
+         </div>
+       </div><br>
+       <h3>Iconos</h3> 
+       <p>Del mismo modo, puede utilizara <a href="#" class="alert-link">las utilidades de flexbox</a>y los <a href="#" class="alert-link">iconos de Booststrap</a>para crear alertas con iconos. Dependiendo de sus iconos y contenido, es posible que desee agregar más utilidades o estilos personalizados.
+       </p>
+       <div class="card">
+         <div class="card-body">
+           <div class="alert alert-primary d-flex align-items-center" role="alert">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+               <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+             </svg>
+             <div>
+               Un ejemplo de alerta con un icono
+             </div>
+           </div>
+         </div>
+       </div> <br>
+       <p>¿Necesita más de un icono para sus alertas? Considere usar más íconos de Bootstrap y hacer un sprite SVG local como tal para hacer referencia fácilmente a los mismos íconos repetidamente.</p>
+       <div class="card">
+         <div class="card-body">
+           <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+             <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+             </symbol>
+             <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+               <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+             </symbol>
+             <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+               <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+             </symbol>
+           </svg>
+           
+           <div class="alert alert-primary d-flex align-items-center" role="alert">
+             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+             <div>
+              Un ejemplo de alerta con un icono
+             </div>
+           </div>
+           <div class="alert alert-success d-flex align-items-center" role="alert">
+             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+             <div>
+              Un ejemplo de alerta de éxito con un icono
+             </div>
+           </div>
+           <div class="alert alert-warning d-flex align-items-center" role="alert">
+             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+             <div>
+              Un ejemplo de alerta de advertencia con un icono
+             </div>
+           </div>
+           <div class="alert alert-danger d-flex align-items-center" role="alert">
+             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+             <div>
+              Un ejemplo de alerta de peligro con un icono
+             </div>
+           </div>
+         </div>
+       </div> <br>
+       <h3>Despedir</h3>
+       <p>Con el complemento de alerta de JavaScript, es posible descartar cualquier alerta en línea. Así es cómo: <br>
+         <ul>
+           <li> Asegúrese de haber cargado el complemento de alerta o el JavaScript Bootstrap compilado</li>
+           <li>Agregue un <a href="#" class="alert-link">botón de cierre</a> y la <code>.alert-dismissible</code>clase, que agrega un relleno adicional a la derecha de la alerta y coloca el botón de cierre.</li>
+           <li>En el botón de cierre, agregue el <code>data-bs-dismiss="alert"</code>atributo, que activa la funcionalidad de JavaScript. Asegúrese de usar el <code> button</code>elemento con él para un comportamiento adecuado en todos los dispositivos.</li>
+           <li>Para animar las alertas al descartarlas, asegúrese de agregar las clases <code>.fade</code>y <code>.show</code>.</li>
+         </ul>
+        
+        <p>Puede ver esto en acción con una demostración en vivo:</p>
+        <div class="card">
+          <div class="card-body">
+           <div class="alert alert-warning alert-dismissible fade show" role="alert">
+             <strong>¡Santo guacamole!</strong> Debe verificar algunos de esos campos a continuación.
+             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+           </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+           Cuando se descarta una alerta, el elemento se elimina por completo de la estructura de la página. Si un usuario del teclado descarta la alerta usando el botón de cierre, su enfoque se perderá repentinamente y, según el navegador, se restablecerá al inicio de la página / documento. Por este motivo, recomendamos incluir JavaScript adicional que escuche el <code> closed.bs.alert</code>evento y se establezca mediante programación <code> focus()</code>en la ubicación más adecuada de la página. Si planea mover el enfoque a un elemento no interactivo que normalmente no recibe el enfoque, asegúrese de agregarlo <code>tabindex="-1"</code> al elemento.
+          </div>
+        </div> <br>
+      </article>
+     </section>
+    </div>
+    <footer class="navbar navbar-dark" style="background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Alertas.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Pulse aquí para volver arriba </strong> 
+        </a>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

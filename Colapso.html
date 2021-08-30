@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Colapso</title>
+  </head>
+  <body>
+    <header class="navbar navbar-dark" style="background-color: #FA8BFF;background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Index.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Escuela De Código </strong> 
+        </a>
+      </div>
+    </header>
+    <div class="container-xxl">
+      <section class="row">
+        <aside class="col-3"> <br>
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Acordeón</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Alertas.html">Alertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tarjetas.html">Tarjetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Botones.html">Botones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Colapso.html">Colapso</a>
+          </li>
+         
+        </ul>
+        </nav>
+         </aside>
+        <article class="col-9"> <br>
+
+          <h3>Colapso</h3> 
+          <p>Cambie la visibilidad del contenido en su proyecto con algunas clases y nuestros complementos de JavaScript.</p> 
+          <h3>Cómo funciona</h3> 
+          <p>El complemento de colapso de JavaScript se utiliza para mostrar y ocultar contenido. Los botones o anclajes se utilizan como activadores que se asignan a elementos específicos que alterna. El colapso de un elemento animará el <code>height</code> de su valor actual a <code> 0</code>. Dado cómo CSS maneja las animaciones, no puede usarlas <code>padding</code> en un <code>.collapse</code> elemento. En su lugar, use la clase como un elemento de envoltura independiente.</p> 
+          <div class="card">
+           <div class="card-body">
+            El efecto de animación de este componente depende de la <code>prefers-reduced-motion</code> consulta de medios. Consulte la <a href="#">sección de movimiento reducido de nuestra documentación de accesibilidad</a> .
+            </div>
+          </div> <br>
+          <h3>Ejemplo</h3> 
+          <p>Haga clic en los botones de abajo para mostrar y ocultar otro elemento a través de cambios de clase:</p> 
+          <ul>
+            <li><code>.callapse</code> oculta el contenido</li>
+            <li><code>.callapsing</code> se aplica durante las transiciones</li>
+           <li><code>.callapse.show</code> muestra contenido</li>
+          </ul> 
+         
+          <p>Generalmente, recomendamos utilizar un botón con el <code>data-bs-target</code> atributo. Si bien no se recomienda desde un punto de vista semántico, también puede usar un enlace con el <code>href</code> atributo (y a <code>role="button"</code> ). En ambos casos, <code>data-bs-toggle="collapse"</code> se requiere.</p> 
+          <div class="card">
+          <div class="card-body">
+          <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Enlace con href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Botón con data-bs-target
+          </button>
+         </p>
+         <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Contenido de marcador de posición para el componente de contracción. Este panel está oculto por defecto, pero se revela cuando el usuario activa el disparador correspondiente.
+          </div>
+         </div>
+         </div>
+         </div> <br>
+         <h3>Horizontal</h3> 
+         <p>El complemento de colapso también admite el colapso horizontal. Agregue la <code>.collapse-horizontal</code> clase de modificador para hacer la  transición en <code>v</code> lugar de <code>height</code> y establezca a <code>width</code> en el elemento secundario inmediato. Siéntase libre de escribir su propio Sass personalizado, usar estilos en línea o usar nuestras <a href="#">utilidades de ancho</a> .</p> 
+         <div class="card">
+         <div class="card-body">
+         Tenga en cuenta que, si bien el ejemplo siguiente tiene un <code>min-heigh</code> tconjunto para evitar repintados excesivos en nuestros documentos, esto no es un requisito explícito. Solo <code>width</code> se requiere el elemento en el niño.
+         </div>
+         </div> <br>
+         <div class="card">
+         <div class="card-body">
+         <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            Alternar colapso de ancho
+          </button>
+         </p>
+         <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+              Este es un contenido de marcador de posición para un colapso horizontal. Está oculto de forma predeterminada y se muestra cuando se activa.
+            </div>
+          </div>
+         </div>
+         </div>
+         </div> <br>
+         <h3>Múltiples objetivos</h3> 
+         <p>A <code>botón</code> o <code>a</code> puede mostrar y ocultar varios elementos haciendo referencia a ellos con un selector en su atributo    <code>href</code> o <code>data-bs-target</code> . Múltiple <code>botón</code>o <code>a</code>puede mostrar y ocultar un elemento si cada uno hace referencia a él con su atributo <code>href</code>o<code>data-bs-target</code></p> 
+         <div class="card">
+         <div class="card-body">
+         <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Alternar primer elemento</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Alternar segundo elemneto</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Alternar ambos elementos</button>
+         </p>
+         <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+         </div>
+         </div>
+         </div> <br>
+        </article>
+      </section>
+    </div>
+    <footer class="navbar navbar-dark" style="background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Colapso.html">
+          <img src="imagenes/descarga.png" alt="" width="70" height="34" class="d-inline-block align-text-top">
+          <strong class="fst-italic"> Pulse aquí para volver arriba </strong> 
+        </a>
+      </div>
+    </footer>
+
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
